@@ -39,16 +39,9 @@ public class Vingenere extends CipherInfo {
         String encrypted = super.message().toUpperCase();
 
         for (int i = 0; i < encrypted.length(); i++) {
-            if (encrypted.charAt(i) == sKey.charAt(i)) {
-                decrypted += (char)('A');
-            } else if (encrypted.charAt(i) > sKey.charAt(i)) {
-                decrypted += (char)((Math.abs(encrypted.charAt(i) - sKey.charAt(i))));
-            } else {
-                decrypted += " ";
-            }
-            // if (encrypted.charAt(i) < sKey.charAt(i))  {
-            //     decrypted += (char)( (encrypted.charAt(i) - sKey.charAt(i)) + sKey.charAt(i) - 1);
-            // }
+            
+            decrypted += (char)((((encrypted.charAt(i) - sKey.charAt(i)) + 26) % 26) + 65);
+
         }
         return decrypted;
     }

@@ -15,10 +15,10 @@ public class Main {
         // System.out.println( c.decrypt());
 
        Vingenere v1 = new Vingenere("FRANKLIN", "BROOKLYN");
-      System.out.println("Encrypted v1: " + v1.encrypt());
+       System.out.println("Encrypted v1: " + v1.encrypt());
 
 
-        Vingenere v2 = new Vingenere(v1.encrypt(), "BROOKLYN");
+    Vingenere v2 = new Vingenere(v1.encrypt(), "BROOKLYN");
     
         System.out.println("Decrypted v2: " + v2.decrypt());
         // System.out.println("Decrypted Message: " + v2.decrypt());
