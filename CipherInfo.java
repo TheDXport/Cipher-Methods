@@ -4,18 +4,18 @@ import javax.crypto.Cipher;
 
 public class CipherInfo {
     
-
-    private String msg;
+    // instance variables
+    private String msg; 
  
 
-    public CipherInfo(String msg) {
+    public CipherInfo(String msg) { // Cipher message constructor 
         this.msg = msg;
         
     }
 
     
 
-    public String message() {
+    public String message() {  // gets the message for each of the cipher class 
         return msg;
     }
 }

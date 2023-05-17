@@ -7,25 +7,12 @@ import ClassStuff.prime;
 public class Main {
  
     public static void main(String[] args) {
-        
-        // Caesar c = new Caesar("GSBOLMJO", 1);
-
-        // System.out.println( "Originial: " + c.getMessage());
-        // System.out.println( c.encrypt());
-        // System.out.println( c.decrypt());
-
-       Vingenere v1 = new Vingenere("FRANKLIN", "BROOKLYN");
-       System.out.println("Encrypted v1: " + v1.encrypt());
-
-
-    Vingenere v2 = new Vingenere(v1.encrypt(), "BROOKLYN");
-    
-        System.out.println("Decrypted v2: " + v2.decrypt());
-        // System.out.println("Decrypted Message: " + v2.decrypt());
-
-
+       Caesar c = new Caesar("jimi hendrix", 13);
+       System.out.println(c.encrypt());
     }
 
+
+    //@POTENTIAL IDEA !!
     // public static String recurCaesarEncrypt(String s, int i) {
 
     //     String Ns = "";
