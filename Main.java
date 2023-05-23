@@ -7,8 +7,8 @@ import ClassStuff.prime;
 public class Main {
  
     public static void main(String[] args) {
-       Caesar c = new Caesar("jimi hendrix", 13);
-       System.out.println(c.encrypt());
+       Caesar c = new Caesar("VON JOZZOVSX", 10);
+       System.out.println(c.decrypt());
     }
 
 
